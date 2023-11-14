@@ -57,6 +57,7 @@
                     return
                 }
 
+
                 gebi("meuForm").submit()
                 alert("Sucesso!")
             }
@@ -67,14 +68,14 @@
     <body>
         <center>
             <h1>Validar</h1>
-            <form id="meuForm" action="http://jkorpela.fi/cgi-bin/echo.cgi">
-                <fieldset align="center" style="width:270px"> 
-                    <legend>Login:</legend>
-                    Email: <input id="idEmail"  name="email" type="email" onblur="maiuscula();"><br>
-                    Senha: <input id="idSenha" name="senha" type="password"><br> 
+			<form id="meuForm" action="http://jkorpela.fi/cgi-bin/echo.cgi">
+				<fieldset align="center" style="width:270px"> 
+					<legend>Login:</legend>
+					Email: <input id="idEmail"  name="email" type="email" onblur="maiuscula();"><br>
+					Senha: <input id="idSenha" name="senha" type="password"><br> 
                     Idade: <input id="idIdade" name="idade" type="number"  step="1"><br> 
-                    <input type="button" value="Enviar" onclick="validar();"> 
-                </fieldset> 
-            </form> 
-        </center>
+					<input type="button" value="Enviar" onclick="validar();"> 
+				</fieldset> 
+			</form> 
+		</center>
     </body>
