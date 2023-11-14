@@ -1,25 +1,30 @@
-<html>
-    <head>
-        <title>Javascript 01</title>
-        <script>
-            alert("olá galera!")
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        alert("ola  galerinha")
+       function trocarTexto(){
+        var elemento = document.getElementById("frase")
+        var elementoNovo = document.getElementById("novaFrase").value
+        elemento.innerHTML = elementoNovo
+       }
 
-            function trocarClasse() {
-                console.log("Chamou trocarClasse!")
-                var fraseAtual = document.getElementById("frase");
-                fraseAtual.className = "h1_2"
-            }
-        </script>
-        <script src="js/myscript.js"></script>
-        <link rel="stylesheet" href="css/style.css"/>
-    </head>
-    <body>
-        <h1 id="frase" class="h1_1"
-        ondblclick="trocarClasse()"
-        onmouseclick ="mudarFrase()">Olá Mundo</h1>
-        <input id="novaFrase" type="text"><br>
-        <input id="botao" type="button"
-            value="Trocar Frase"
-            onclick="trocarTexto()"><br>
-    </body>
+
+    </script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="frase" ondblclick="trocarFrase()" onmouseover="trocarClasse()" class="h1_1">Olá Mundo!</h1>
+    <input id="novaFrase" type="text"> <br>
+    <input id="botao" type="button"
+        value="trocar Frase"
+        onclick="trocarTexto();"> <br>
+        <a href="calculadora.html">Calculadora</a><br>
+        <a href="validar.html">Validar</a>
+        <a href="formulário.html">Formulário</a>
+</body>
 </html>

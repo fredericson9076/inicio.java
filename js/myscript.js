@@ -1,24 +1,16 @@
-//aqui vai javascript
-function mudarFrase(){
-    var elemento = document.getElementById("frase")
-    elemento.innerHTML = "Qualquer frase"
-    elemento.style.color = "red";
-    elemento.style.fontSize = "25px";
-    elemento.style.backgroundColor = "yellow";
-    //altera o fundo da página
-    document.body.style.backgroundColor = "blue";
-    elemento.innerHTML = "<img src=\'img/gatofofo.jpg\' />"
+function trocarFrase(){
+    var fraseAtual=document.getElementById("frase");
+    fraseAtual.innerHTML= "Qualquer frase!";
+    fraseAtual.style.color= "lightblue";
+    fraseAtual.style.fontSize= "25px";
+    fraseAtual.style.backgroundColor= "lightpink";
+    document.body.style.backgroundColor= "purple";
+    fraseAtual.innerHTML= "<img src=\'img/miamiheat.png\'/>";
 }
 
 function trocarClasse(){
-    var fraseAtual = document.getElementById("frase");
-    fraseAtual.className = "h1_2";
-}
-
-function trocarTexto(){
-    var elemento = document.getElementById("frase")
-    var nova = document.getElementById("novaFrase").value
-    elemento.innerHTML = nova
+    var fraseAtual=document.getElementById("frase");
+    fraseAtual.className="h1_2";
 }
 
 function gebi(id){
