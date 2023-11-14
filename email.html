@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Título</title>
+        <script>
+            function validarEmail() {
+                var email = document.getElementById("idEmail").value
+                if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                    alert("Email inválido")
+                    return
+                }
+            }
+        </script>   
     </head>
     <body>
         Está com dúvida?
-        <a href="mailto:email@provedor.com.br?
-        &subject=Assunto do Email
+        <a href="mailto:email@provedor.com.br? 
+        &subject=Assunto do Email 
         &cc=Copia@provedor.com.br
         &bcc=copiaoculta@provedor.com.br
-        &body=OLá galera!">Enviar Email</a>
+        &body=Olá galera!">Enviar Email</a><br>
+        <a href="https://wa.me/5548999999999? 
+        text=mensagem%20de%20hoje">WhatsApp</a>
 
-        <form id="idForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
-            E-mail:<input
+        <form id="idForm" action="https://app.headlessforms.cloud/api/v1/form-submission/UF7YAmmfN8" method="POST">
+            <label>Email</label>
+            <input placeholder="nada@nada.com" title="Um email válido!" type="email" name="email" id="idEmail" onblur="validarEmail()" required><br>
+            <label>Nome</label>
+            <input type="text" name="nome" id="idNome" placeholder="Seu Nome" minlength="5" maxlength="12" pattern="[a-z]{5,12}" required><br>
+            <textarea name="corpo" id="idCorpo" rows="7" cols="33" required></textarea><br>
+            <input type="submit" value="Enviar">
         </form>
-        
 
     </body>
 </html>
