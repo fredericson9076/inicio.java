@@ -7,13 +7,26 @@
     <title>Título</title>
     <script>
         function contar() {
-            document.write(0 + "<br>")
-            document.write(1 + "<br>")
-            document.write(2 + "<br>")
-            document.write(3 + "<br>")
-            document.write(4 + "<br>")
-            document.write(5 + "<br>")
+            var n = 1
+            while (n <= 10)
+        {
+            document.write(n)
+            document.write('<br>')
+            n = n + 1
+        }   
+
+        var numeros=[0, 1, 2, 3, 4, 5, 6]
+            var cars=["Celta", "Marea", "Banana movel", "Maverick", "Dodge charger", "Opala", "Comodoro"];
+            document.write(cars + "<br>")
+            var novoCaro =prompt("diga um carro")
+            cars.push(novoCaro)
+            for (let index; = 0; index <cars.length; index++){
+                const car = cars[index]
+                document.write(car + "<br>")
+            }
+            Array
         }
+
     </script>
 </head>
 <body>
